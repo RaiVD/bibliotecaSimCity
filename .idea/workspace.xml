@@ -4,11 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad715c62-078c-4597-a395-da67baee5c73" name="Changes" comment="" />
+    <list default="true" id="ad715c62-078c-4597-a395-da67baee5c73" name="Changes" comment="Atualizações de teste">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableUserServiceTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/connection/Connect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/connection/Connect.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/ValidDataBaseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/ValidDataBaseModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/GetDataBaseService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/GetDataBaseService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableAuthorService/TableAuthorService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/tableAuthorService/TableAuthorService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableBookService/TableBookService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/tableBookService/TableBookService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableLoanBookService/TableLoanBookService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/tableLoanBookService/TableLoanBookService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableUserService/TableUserService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/tableUserService/TableUserService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/MenuView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/MenuView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/UserView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/UserView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/AuthorView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/AuthorView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/BookView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/BookView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LibrarianView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LibrarianView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LoansView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LoansView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/UserEditView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/UserEditView.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableAuthorServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableAuthorServiceTest.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,9 +52,117 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/raissa.carvalho/Desktop/bibliotecaSimCity/src/main/kotlin",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\raissa.carvalho\Desktop\bibliotecaSimCity\src\main\kotlin" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="view.librarianView" />
+      <recent name="model" />
+      <recent name="service.tableAuthorService" />
+      <recent name="service.tableUserService" />
+      <recent name="service.tableBookService" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TableUserServiceTest.testUpdateValidUserIdandEmail">
+    <configuration name="TableUserServiceTest.testDeleteUserNotValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bibliotecaSimCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteUserNotValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableUserServiceTest.testDeleteUserValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bibliotecaSimCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteUserValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableUserServiceTest.testUpdateInvalidUserIdAndEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bibliotecaSimCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateInvalidUserIdAndEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableUserServiceTest.testUpdateInvalidUserIdAndEmailNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bibliotecaSimCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateInvalidUserIdAndEmailNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableUserServiceTest.testUpdateValidUserIdandEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bibliotecaSimCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateValidUserIdandEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TableUserServiceTest.testUpdateValidUserIdandEmail" />
+        <item itemvalue="JUnit.TableUserServiceTest.testUpdateInvalidUserIdAndEmailNotExist" />
+        <item itemvalue="JUnit.TableUserServiceTest.testUpdateInvalidUserIdAndEmail" />
+        <item itemvalue="JUnit.TableUserServiceTest.testDeleteUserNotValid" />
+        <item itemvalue="JUnit.TableUserServiceTest.testDeleteUserValid" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -35,5 +173,9 @@
       <updated>1693575552658</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Atualizações de teste" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizações de teste" />
   </component>
 </project>

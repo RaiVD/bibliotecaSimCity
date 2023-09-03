@@ -1,36 +1,29 @@
-package view
+package view.librarianView
 
 import model.InputUserModel
-import model.ValidDataBaseModel.Companion.isValidUserCredentials
-import service.GetDataBaseService
-import service.tableBookService.TableBookService
-import service.tableLoanBookService.TableLoanBookService
-import service.tableUserService.TableUserService
+import model.ValidDataBaseModel.Companion.isValidLibrarianCredentials
+import view.MenuView
 
 class LibrarianView {
     private val inputUserModel = InputUserModel()
-    private val getDataBaseService = GetDataBaseService()
-    private val tableBookService = TableBookService()
-    private val tableLoanBookService = TableLoanBookService()
-    private val tableUserService = TableUserService()
+
     fun startOption() {
         val name = inputUserModel.readStringFromUser("Digite seu nome: ")
         val password = inputUserModel.readStringFromUser("Digite seu CPF: ")
 
-        if (isValidUserCredentials(name, password)) {
-            println("========== Bem-Vindo $name ==========")
+        if (isValidLibrarianCredentials(name, password)) {
+            println("\n========================== Bem-Vindo $name ==========================")
             var option: Int
             do {
                 menu()
                 option = inputUserModel.readIntFromUser("Qual opção você deseja: ")
 
                 when (option) {
-                    0 -> MenuView()
-                    1 -> listBook()
-                    2 -> listMyLoans()
-                    3 -> myLoans()
-                    4 -> deleteLoans()
-                    5 -> updateData()
+                    0 -> MenuView().start()
+                    1 -> BookView().startOption()
+                    2 -> LoansView().startOption()
+                    3 -> AuthorView().startOption()
+                    4 -> UserEditView().startOption()
                     else -> println("Opção inválida, tente novamente!")
                 }
             } while (option != 0)
@@ -40,11 +33,10 @@ class LibrarianView {
     }
     private fun menu() {
         println("\n0. Menu Principal |" +
-                " 1. Livros disponiveis |" +
-                " 2. Meus Emprestimos |" +
-                " 3. Realizar um novo emprestimo |" +
-                " 4. Deletar um emprestimo |" +
-                " 5. Atualizar dados"
+                " 1. Livros |" +
+                " 2. Emprestimos |" +
+                " 3. Autores |" +
+                " 4. Usuarios"
         )
     }
 }

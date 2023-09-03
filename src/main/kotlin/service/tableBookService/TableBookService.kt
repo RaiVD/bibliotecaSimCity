@@ -1,11 +1,18 @@
-package service
+package service.tableBookService
 
 import connection.Connect
+import service.GetDataBaseService
+import model.ValidDataBaseModel
+import model.ValidDataBaseModel.Companion.isValidAuthorId
+import model.ValidDataBaseModel.Companion.isValidBookId
+import model.ValidDataBaseModel.Companion.isValidBookInfo
 import java.sql.SQLException
 
 class TableBookService {
 
     private val connection = Connect().creatConnect()
+    private val getDataBaseService = GetDataBaseService()
+
     fun addBook(isbn: String, name_book: String, id_author: Int) {
         try {
             if (!isValidBookInfo(isbn, name_book)) {
@@ -47,8 +54,13 @@ class TableBookService {
             if (!isValidBookId(id)) {
                 println("ID de livro inválido!")
                 return
-            } else if (!(isValidBookInfo(isbn, name_book) || id_author != null)) {
+            }
+            if (!isValidBookInfo(isbn, name_book)) {
                 println("As informações do livro não podem estar vazias ou nulas.")
+                return
+            }
+            if (!isValidAuthorId(id)) {
+                println("ID de autor inválido!")
                 return
             }
             val sql =
@@ -68,12 +80,12 @@ class TableBookService {
 
         try {
             while (resultSet.next()) {
-                val id = resultSet.getInt("idBook")
+                val id = resultSet.getInt("id")
                 val isbn = resultSet.getString("isbn")
                 val name_book = resultSet.getString("name_book")
                 val id_author = resultSet.getInt("id_author")
 
-                val authorName = getAuthorName(id_author)
+                val authorName = getDataBaseService.getAuthorName(id_author)
 
                 println("ID: $id | ISBN do livro: $isbn | Nome do livro: $name_book | Nome do autor: $authorName")
             }
@@ -93,12 +105,12 @@ class TableBookService {
 
         try {
             while (resultSet.next()) {
-                val id = resultSet.getInt("idBook")
+                val id = resultSet.getInt("id")
                 val isbn = resultSet.getString("isbn")
                 val name_book = resultSet.getString("name_book")
                 val id_author = resultSet.getInt("id_author")
 
-                val authorName = getAuthorName(id_author)
+                val authorName = getDataBaseService.getAuthorName(id_author)
 
                 println("ID: $id | ISBN do livro: $isbn | Nome do livro: $name_book | Nome do autor: $authorName")
             }
@@ -109,38 +121,4 @@ class TableBookService {
         }
     }
 
-    private fun isValidBookId(id: Int): Boolean {
-        val sql = "SELECT COUNT(*) FROM book WHERE id=?"
-
-        try {
-            val preparedStatement = connection.prepareStatement(sql)
-            preparedStatement.setInt(1, id)
-            val resultSet = preparedStatement.executeQuery()
-            resultSet.next()
-            val count = resultSet.getInt(1)
-
-            resultSet.close()
-            preparedStatement.close()
-
-            return count > 0
-        } catch (e: SQLException) {
-            e.printStackTrace()
-        }
-
-        return false
-    }
-
-    private fun isValidBookInfo(nameBook: String, author: String): Boolean {
-        return nameBook.isNotBlank() && author.isNotBlank()
-    }
-    private fun getAuthorName(authorId: Int): String {
-        val statement = connection.createStatement()
-        val resultSet = statement.executeQuery("SELECT name_author FROM author WHERE id = $authorId")
-
-        return if (resultSet.next()) {
-            resultSet.getString("name_author")
-        } else {
-            "Autor não encontrado"
-        }
-    }
 }

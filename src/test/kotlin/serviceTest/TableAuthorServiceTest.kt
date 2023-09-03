@@ -1,6 +1,5 @@
 package serviceTest
 
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.*
@@ -11,6 +10,7 @@ import java.sql.Connection
 import java.sql.ResultSet
 import java.sql.Statement
 import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 class TableAuthorServiceTest {
 
@@ -33,18 +33,13 @@ class TableAuthorServiceTest {
     fun setUp() {
         // Redireciona a saída padrão para o outputStreamCaptor.
         System.setOut(PrintStream(outputStreamCaptor))
-
-        // Injete os mocks de conexão e statement na classe de serviço
-    //    tableAuthorService.setConnection(connection)
-
-        // Configura o comportamento dos mocks
-        `when`(connection.createStatement()).thenReturn(statement)
     }
 
     @Test
     fun testDeleteAuthor() {
         // Configura o comportamento do mock para a exclusão de autor
         `when`(statement.executeUpdate(anyString())).thenReturn(1)
+
 
         // Execute o teste
         tableAuthorService.deleteAuthor(1) // Substitua pelo ID válido de um autor
@@ -80,8 +75,8 @@ class TableAuthorServiceTest {
 
         // Verifica se as mensagens contêm os nomes dos autores.
         val output = outputStreamCaptor.toString()
-        assertTrue(output.contains("Author1"))
-        assertTrue(output.contains("Author2"))
+        assertTrue(output.contains("ID: 1 | Nome do autor: Author1"))
+        assertTrue(output.contains("ID: 2 | Nome do autor: Author2"))
     }
 
     @Test
@@ -99,7 +94,9 @@ class TableAuthorServiceTest {
 
         // Verifica se a mensagem contém o nome do autor.
         val output = outputStreamCaptor.toString()
-        assertTrue(output.contains("Author1"))
+        assertTrue(output.contains("ID: 1 | Nome do autor: Author1"))
     }
 }
+
+
 
