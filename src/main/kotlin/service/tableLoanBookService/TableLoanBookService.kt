@@ -14,7 +14,7 @@ import java.time.format.DateTimeParseException
 
 class TableLoanBookService() {
 
-    private val connection = Connect().creatConnect()
+    var connection = Connect().creatConnect()
     private val getDataBaseService = GetDataBaseService()
 
     fun addLoanBook(id_user: Int, id_book: Int, return_date: String) {

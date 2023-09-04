@@ -5,25 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad715c62-078c-4597-a395-da67baee5c73" name="Changes" comment="Atualizações de teste">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableLoanBookServiceTest.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableUserServiceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/connection/Connect.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/connection/Connect.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/model/ValidDataBaseModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/model/ValidDataBaseModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/GetDataBaseService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/GetDataBaseService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableAuthorService/TableAuthorService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/tableAuthorService/TableAuthorService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableBookService/TableBookService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/tableBookService/TableBookService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableLoanBookService/TableLoanBookService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/tableLoanBookService/TableLoanBookService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableUserService/TableUserService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/tableUserService/TableUserService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/MenuView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/MenuView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/UserView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/UserView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/AuthorView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/AuthorView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/BookView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/BookView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LibrarianView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LibrarianView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LoansView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LoansView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/UserEditView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/UserEditView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableAuthorServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableAuthorServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +59,8 @@
       <recent name="service.tableBookService" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TableUserServiceTest.testUpdateValidUserIdandEmail">
-    <configuration name="TableUserServiceTest.testDeleteUserNotValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TableLoanBookServiceTest">
+    <configuration name="TableAuthorServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bibliotecaSimCity" />
       <extension name="coverage">
         <pattern>
@@ -82,14 +69,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
-      <option name="METHOD_NAME" value="testDeleteUserNotValid" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.TableAuthorServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableAuthorServiceTest.testUpdateInvalidUserIdAndNameNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bibliotecaSimCity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="serviceTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="serviceTest" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.TableAuthorServiceTest" />
+      <option name="METHOD_NAME" value="testUpdateInvalidUserIdAndNameNotExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableUserServiceTest.testDeleteUserValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TableLoanBookServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bibliotecaSimCity" />
       <extension name="coverage">
         <pattern>
@@ -98,14 +100,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
-      <option name="METHOD_NAME" value="testDeleteUserValid" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="serviceTest.TableLoanBookServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TableUserServiceTest.testUpdateInvalidUserIdAndEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TableUserServiceTest.testUpdateValidUserIdAndEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bibliotecaSimCity" />
       <extension name="coverage">
         <pattern>
@@ -115,23 +116,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="serviceTest" />
       <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
-      <option name="METHOD_NAME" value="testUpdateInvalidUserIdAndEmail" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TableUserServiceTest.testUpdateInvalidUserIdAndEmailNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bibliotecaSimCity" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="serviceTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="serviceTest" />
-      <option name="MAIN_CLASS_NAME" value="serviceTest.TableUserServiceTest" />
-      <option name="METHOD_NAME" value="testUpdateInvalidUserIdAndEmailNotExist" />
+      <option name="METHOD_NAME" value="testUpdateValidUserIdAndEmail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TableLoanBookServiceTest" />
+        <item itemvalue="JUnit.TableUserServiceTest.testUpdateValidUserIdAndEmail" />
         <item itemvalue="JUnit.TableUserServiceTest.testUpdateValidUserIdandEmail" />
-        <item itemvalue="JUnit.TableUserServiceTest.testUpdateInvalidUserIdAndEmailNotExist" />
-        <item itemvalue="JUnit.TableUserServiceTest.testUpdateInvalidUserIdAndEmail" />
-        <item itemvalue="JUnit.TableUserServiceTest.testDeleteUserNotValid" />
-        <item itemvalue="JUnit.TableUserServiceTest.testDeleteUserValid" />
+        <item itemvalue="JUnit.TableAuthorServiceTest" />
+        <item itemvalue="JUnit.TableAuthorServiceTest.testUpdateInvalidUserIdAndNameNotExist" />
       </list>
     </recent_temporary>
   </component>
@@ -172,10 +157,23 @@
       <option name="presentableId" value="Default" />
       <updated>1693575552658</updated>
     </task>
+    <task id="LOCAL-00001" summary="Atualizações de teste">
+      <created>1693767870060</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1693767870060</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Atualizações de teste" />
     <option name="LAST_COMMIT_MESSAGE" value="Atualizações de teste" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bibliotecaSimCity$TableUserServiceTest.ic" NAME="TableUserServiceTest Coverage Results" MODIFIED="1693768947227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>serviceTest.*</FILTER>
+    </SUITE>
   </component>
 </project>

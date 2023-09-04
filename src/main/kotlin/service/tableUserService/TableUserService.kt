@@ -53,12 +53,12 @@ class TableUserService {
 
     fun updateUser(id: Int, email: String) {
         try {
-            if (!isValidUserId(id)) {
-                println("ID de usuário inválido!")
-                return
-            }
             if (!isValidEmail(email) || email.isNotBlank()){
                 println("Email invalido!")
+                return
+            }
+            if (!isValidUserId(id)) {
+                println("ID de usuário inválido!")
                 return
             }
             val sql =

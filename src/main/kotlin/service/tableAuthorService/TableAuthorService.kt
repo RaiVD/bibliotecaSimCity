@@ -8,12 +8,7 @@ import java.sql.SQLException
 
 class TableAuthorService {
 
-    private val connection: Connection
-
-    // Configura a conexão no construtor
-    init {
-        connection = Connect().creatConnect()
-    }
+    var connection = Connect().creatConnect()
 
     fun addAuthor(name_author: String) {
         try {
