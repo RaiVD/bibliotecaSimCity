@@ -10,7 +10,7 @@ import java.sql.SQLException
 
 class TableBookService {
 
-    private val connection = Connect().creatConnect()
+    var connection = Connect().creatConnect()
     private val getDataBaseService = GetDataBaseService()
 
     fun addBook(isbn: String, name_book: String, id_author: Int) {
