@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad715c62-078c-4597-a395-da67baee5c73" name="Changes" comment="Atualizações de teste">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableAuthorService/TableAuthorService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/TableAuthorService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableBookService/TableBookService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/TableBookService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableLoanBookService/TableLoanBookService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/TableLoanBookService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/tableUserService/TableUserService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/TableUserService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/MenuView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/MenuView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/UserView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/UserView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/AuthorView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/AuthorView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/BookView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/BookView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LoansView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/LoansView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/UserEditView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/view/librarianView/UserEditView.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableAuthorServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableAuthorServiceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableBookServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableBookServiceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableLoanBookServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableLoanBookServiceTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableUserServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/serviceTest/TableUserServiceTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2UnVts7YPyPJyTYsSmQ0nnzKUxh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -49,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/raissa.carvalho/Desktop/bibliotecaSimCity/src/main/kotlin",
+    "last_opened_file_path": "C:/Users/raissa.carvalho/Desktop/Nova pasta/Desafio3",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -180,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1693854130029</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Atualizações de teste">
+      <created>1693860057152</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693860057152</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -194,6 +190,6 @@
     <SUITE FILE_PATH="coverage/bibliotecaSimCity$TableUserServiceTest.ic" NAME="TableUserServiceTest Coverage Results" MODIFIED="1693768947227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>serviceTest.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/bibliotecaSimCity$kotlin_in_bibliotecaSimCity.ic" NAME="kotlin in bibliotecaSimCity Coverage Results" MODIFIED="1693858989190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/bibliotecaSimCity$kotlin_in_bibliotecaSimCity.ic" NAME="kotlin in bibliotecaSimCity Coverage Results" MODIFIED="1693859245329" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
