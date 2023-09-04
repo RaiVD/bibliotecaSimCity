@@ -1,4 +1,4 @@
-package service.tableAuthorService
+package service
 
 import connection.Connect
 import model.ValidDataBaseModel.Companion.isValidAuthorId

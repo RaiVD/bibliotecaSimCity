@@ -1,7 +1,6 @@
-package service.tableUserService
+package service
 
 import connection.Connect
-import model.ValidDataBaseModel
 import model.ValidDataBaseModel.Companion.isValidEmail
 import model.ValidDataBaseModel.Companion.isValidUserId
 import model.ValidDataBaseModel.Companion.isValidUserInfo
@@ -53,7 +52,7 @@ class TableUserService {
 
     fun updateUser(id: Int, email: String) {
         try {
-            if (!isValidEmail(email) || email.isNotBlank()){
+            if (!isValidEmail(email)){
                 println("Email invalido!")
                 return
             }

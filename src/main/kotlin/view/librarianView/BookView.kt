@@ -1,7 +1,7 @@
 package view.librarianView
 
 import model.InputUserModel
-import service.tableBookService.TableBookService
+import service.TableBookService
 import view.MenuView
 
 class BookView {

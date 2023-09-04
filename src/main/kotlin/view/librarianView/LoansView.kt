@@ -1,7 +1,7 @@
 package view.librarianView
 
 import model.InputUserModel
-import service.tableLoanBookService.TableLoanBookService
+import service.TableLoanBookService
 import view.MenuView
 
 class LoansView {

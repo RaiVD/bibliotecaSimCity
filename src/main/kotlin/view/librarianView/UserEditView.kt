@@ -1,7 +1,7 @@
 package view.librarianView
 
 import model.InputUserModel
-import service.tableUserService.TableUserService
+import service.TableUserService
 import view.MenuView
 
 class UserEditView {

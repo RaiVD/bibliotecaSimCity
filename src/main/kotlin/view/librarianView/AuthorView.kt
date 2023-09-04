@@ -1,12 +1,12 @@
 package view.librarianView
 
 import model.InputUserModel
-import service.tableAuthorService.TableAuthorService
+import service.TableAuthorService
 import view.MenuView
 
 class AuthorView {
-    private val inputUserModel = InputUserModel()
-    private val tableAuthorService = TableAuthorService()
+    var inputUserModel = InputUserModel()
+    var tableAuthorService = TableAuthorService()
     fun startOption() {
         var option: Int
         do {
@@ -36,15 +36,15 @@ class AuthorView {
     private fun listAuthor(){
         tableAuthorService.listAuthors()
     }
-    private fun addAuthor(){
+    fun addAuthor(){
         val name = inputUserModel.readStringFromUser("Digite o nome do autor: ")
         tableAuthorService.addAuthor(name)
     }
-    private fun deleteAuthor(){
+    fun deleteAuthor(){
         val id = inputUserModel.readIntFromUser("Qual o ID do autor: ")
         tableAuthorService.deleteAuthor(id)
     }
-    private fun listAuthorId(){
+    fun listAuthorId(){
         val id = inputUserModel.readIntFromUser("Qual o ID do autor: ")
         tableAuthorService.listSpecificAuthor(id)
     }

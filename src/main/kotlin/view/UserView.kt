@@ -2,11 +2,10 @@ package view
 
 import model.InputUserModel
 import service.GetDataBaseService
-import model.ValidDataBaseModel
 import model.ValidDataBaseModel.Companion.isValidUserCredentials
-import service.tableBookService.TableBookService
-import service.tableLoanBookService.TableLoanBookService
-import service.tableUserService.TableUserService
+import service.TableBookService
+import service.TableLoanBookService
+import service.TableUserService
 
 class UserView {
     private val inputUserModel = InputUserModel()

@@ -3,7 +3,7 @@ package serviceTest
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.Mockito.*
-import service.tableBookService.TableBookService
+import service.TableBookService
 import java.sql.Connection
 import java.sql.PreparedStatement
 import java.sql.ResultSet
